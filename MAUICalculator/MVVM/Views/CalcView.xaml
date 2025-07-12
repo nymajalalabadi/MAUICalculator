@@ -31,9 +31,13 @@
                         Style="{StaticResource YellowButton}"/>
                 
                 <Button Text="%" Grid.Row="0" Grid.Column="2"
+                        Command="{Binding OperationCommand}"
+                        CommandParameter=" % "
                         Style="{StaticResource YellowButton}"/>
                 
                 <Button Text="/" Grid.Row="0" Grid.Column="3"
+                        Command="{Binding OperationCommand}"
+                        CommandParameter=" / "
                         Style="{StaticResource RedButton}"/>
                 
 
@@ -54,6 +58,8 @@
                         CommandParameter="9"/>
                 
                 <Button Text="*" Grid.Row="1" Grid.Column="3"
+                        Command="{Binding OperationCommand}"
+                        CommandParameter=" * "
                         Style="{StaticResource RedButton}"/>
 
                 <!--#endregion-->
@@ -73,6 +79,8 @@
                         CommandParameter="6"/>
                 
                 <Button Text="-" Grid.Row="2" Grid.Column="3"
+                        Command="{Binding OperationCommand}"
+                        CommandParameter=" - "
                         Style="{StaticResource RedButton}"/>
 
                 <!--#endregion-->
@@ -92,6 +100,8 @@
                         CommandParameter="3"/>
                 
                 <Button Text="+" Grid.Row="3" Grid.Column="3"
+                        Command="{Binding OperationCommand}"
+                        CommandParameter=" + "
                         Style="{StaticResource RedButton}"/>
 
                 <!--#endregion-->
