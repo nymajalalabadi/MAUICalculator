@@ -25,10 +25,12 @@
                 <!--#region Row 1 -->
 
                 <Button Text="AC" Grid.Row="0" Grid.Column="0"
-                        Style="{StaticResource YellowButton}"/>
+                        Style="{StaticResource YellowButton}"
+                        Command="{Binding ResetCommand}"/>
                 
                 <Button Text="⌫" Grid.Row="0" Grid.Column="1"
-                        Style="{StaticResource YellowButton}"/>
+                        Style="{StaticResource YellowButton}"
+                        Command="{Binding BackspaceCommand}"/>
                 
                 <Button Text="%" Grid.Row="0" Grid.Column="2"
                         Command="{Binding OperationCommand}"
@@ -117,7 +119,8 @@
                         CommandParameter="."/>
                 
                 <Button Text="=" Grid.Row="4" Grid.Column="3"
-                        Style="{StaticResource RedButton}"/>
+                        Style="{StaticResource RedButton}"
+                        Command="{Binding CalculateCommand}"/>
 
                 <!--#endregion-->
 
